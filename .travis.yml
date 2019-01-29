@@ -4,12 +4,9 @@ node_js:
 cache:
   directories:
   - node_modules
-  - "$(npm config get prefix)/lib/node_modules"
-before_install:
-- npm list -g firebase-tools --depth=0 || npm install -g firebase-tools
-before_deploy:
-- npm run lint
-- npm run test
+# before_deploy:
+# - npm run lint
+# - npm run test
 deploy:
   provider: firebase
   on:
