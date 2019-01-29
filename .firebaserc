@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "narmitage-blog",
+    "develop": "narmitage-blog-develop"
+  }
+}
