@@ -7,14 +7,17 @@ cache:
 script:
   - npm run build
 deploy:
-  skip_cleanup: true
   - provider: firebase
+    skip_cleanup: true
     on:
       branch: master
     project: "narmitage-blog"
+    token:
+      secure: Qr8370VTG4IDa4LTyBfQIekjMLEFep/JJl+MnV3ckh5QAIsoRwaY2Jvt2VVV34Ofa/U/h92rM8dGRSa3LSidwwwPEo1t++DmjMiibOeF1Ve8HSkffMrJTuWB6icFOyCVAFDvh63DbzvOUolbaysFhu4pt2EMQloEviZVjmpY5V/OhEetJSrQ/nr6C08yB8/lyKUmk4auwRQMBD0MdHuwWFpUhIRoNEwEDiHwL6epVUZoRQfQAwsKddkgo/+rAFZlhTDvmh+GaOv9p7l/czZVgHfMB077lloVBiDv+rSAxAg3uKJZz6sEVAXrHqEoUO0SQpx48XmU7aHpx5CTC+q/+31+NfOVbZBBgD2mt5elFocQhbf3+dE8n/5VHAWmTYi0nXU9WKRO/6BOR2T4ts4dbKrQ1H/f20q+I+G/TTBv3mI6MG1/+86m8bFWCUk92GGjrQQHRr3+Debp3iBlPywlaMLbq8POzkXICUl+sWQTYwZ9PnXGRj9GbD74L4ty3baPUXxcTWsKZAjLT568n+PI8P8bP9FHtNwds2SB5gkLZxDSnNhdrDqtU7kgR3mIuWCSu0+dglYmBjU1WV+nQJYrJyFuG/ZbQWf9hXtxsacwCo8zNeTg9VcVcEmt0yeAchJ7MM3l9CgpzIn0d16VWYnxxMCYVQiafGrhZTBJ5SIW5Ho=
   - provider: firebase
+    skip_cleanup: true
     on:
       branch: develop
     project: "narmitage-blog-develop"
-  token:
-    secure: Qr8370VTG4IDa4LTyBfQIekjMLEFep/JJl+MnV3ckh5QAIsoRwaY2Jvt2VVV34Ofa/U/h92rM8dGRSa3LSidwwwPEo1t++DmjMiibOeF1Ve8HSkffMrJTuWB6icFOyCVAFDvh63DbzvOUolbaysFhu4pt2EMQloEviZVjmpY5V/OhEetJSrQ/nr6C08yB8/lyKUmk4auwRQMBD0MdHuwWFpUhIRoNEwEDiHwL6epVUZoRQfQAwsKddkgo/+rAFZlhTDvmh+GaOv9p7l/czZVgHfMB077lloVBiDv+rSAxAg3uKJZz6sEVAXrHqEoUO0SQpx48XmU7aHpx5CTC+q/+31+NfOVbZBBgD2mt5elFocQhbf3+dE8n/5VHAWmTYi0nXU9WKRO/6BOR2T4ts4dbKrQ1H/f20q+I+G/TTBv3mI6MG1/+86m8bFWCUk92GGjrQQHRr3+Debp3iBlPywlaMLbq8POzkXICUl+sWQTYwZ9PnXGRj9GbD74L4ty3baPUXxcTWsKZAjLT568n+PI8P8bP9FHtNwds2SB5gkLZxDSnNhdrDqtU7kgR3mIuWCSu0+dglYmBjU1WV+nQJYrJyFuG/ZbQWf9hXtxsacwCo8zNeTg9VcVcEmt0yeAchJ7MM3l9CgpzIn0d16VWYnxxMCYVQiafGrhZTBJ5SIW5Ho=
+    token:
+      secure: Qr8370VTG4IDa4LTyBfQIekjMLEFep/JJl+MnV3ckh5QAIsoRwaY2Jvt2VVV34Ofa/U/h92rM8dGRSa3LSidwwwPEo1t++DmjMiibOeF1Ve8HSkffMrJTuWB6icFOyCVAFDvh63DbzvOUolbaysFhu4pt2EMQloEviZVjmpY5V/OhEetJSrQ/nr6C08yB8/lyKUmk4auwRQMBD0MdHuwWFpUhIRoNEwEDiHwL6epVUZoRQfQAwsKddkgo/+rAFZlhTDvmh+GaOv9p7l/czZVgHfMB077lloVBiDv+rSAxAg3uKJZz6sEVAXrHqEoUO0SQpx48XmU7aHpx5CTC+q/+31+NfOVbZBBgD2mt5elFocQhbf3+dE8n/5VHAWmTYi0nXU9WKRO/6BOR2T4ts4dbKrQ1H/f20q+I+G/TTBv3mI6MG1/+86m8bFWCUk92GGjrQQHRr3+Debp3iBlPywlaMLbq8POzkXICUl+sWQTYwZ9PnXGRj9GbD74L4ty3baPUXxcTWsKZAjLT568n+PI8P8bP9FHtNwds2SB5gkLZxDSnNhdrDqtU7kgR3mIuWCSu0+dglYmBjU1WV+nQJYrJyFuG/ZbQWf9hXtxsacwCo8zNeTg9VcVcEmt0yeAchJ7MM3l9CgpzIn0d16VWYnxxMCYVQiafGrhZTBJ5SIW5Ho=
